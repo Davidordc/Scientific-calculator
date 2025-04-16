@@ -1,0 +1,199 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.calculator {
+    width: 360px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.version-badge {
+    text-align: center;
+    background-color: #4285f4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    display: inline-block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: fit-content;
+}
+
+.display {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+#input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    text-align: right;
+    outline: none;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#result {
+    font-size: 24px;
+    min-height: 30px;
+    text-align: right;
+    color: #0b5394;
+    font-weight: bold;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.btn {
+    border: none;
+    font-size: 16px;
+    padding: 12px 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.operator {
+    background-color: #f8f8f8;
+    color: #0b5394;
+    font-weight: bold;
+}
+
+.equals {
+    background-color: #4285f4;
+    color: white;
+}
+
+.clear {
+    background-color: #ff5252;
+    color: white;
+}
+
+.scientific {
+    background-color: #e1f5fe;
+    flex: 1;
+    min-width: calc(25% - 5px);
+}
+
+.memory {
+    background-color: #e8f5e9;
+    flex: 1;
+    min-width: calc(25% - 5px);
+}
+
+.history-container {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.history-header button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.history-list {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.history-item {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.history-expression {
+    color: #666;
+}
+
+.history-result {
+    font-weight: bold;
+    color: #0b5394;
+}
+
+.version-controls {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.upgrade-btn {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.upgrade-btn:hover {
+    background-color: #3367d6;
+}
